@@ -13,18 +13,213 @@
 	clear: both;
 }
 
-body {
-	/*background-color: #989898;
-	background: url('../img/tsinelasimg.jpg');
-	background-attachment: scroll;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: 0;*/
+/**********   general   **********/
+
+h2,
+h3 {
+	padding-bottom: 3%;
+	padding-left: 3%;
+}
+
+img {
+	padding-bottom: 3%;
+}
+
+p {
+	text-align: justify;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+/**********   sidebar   **********/
+nav {
+	background-color: #2f7a78;
+	color: #469280;
+	width: 100vw;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+nav > div > a {
+	text-align: center;
+	text-decoration: none;
+	color: #469280;
+}
+nav > div > a > span {
+	display: block;
+	width: 80vw;
+	height:5vh;
+	background-color: #1d5a67;
+	margin: 1%;
+	padding: 2%;
+}
+
+.sidebarlogo > img {
+	margin-top: 3%;
+	height: 15vh;
+
 }
 
 
-/*   wrapper   */
+/**********   main   **********/
 
+.main {
+	background-color: #469280;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+
+}
+
+.boxmain {
+	position: absolute;
+	width: 60vw;
+	height: 50vh;
+	border: 1px solid #1d5a67;
+	top: 25vh;
+	left: 20vw;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.boxmaintxt {
+	color: #10313e;
+	text-align: center;
+}
+
+.boxmaintxt > h1,
+.boxmaintxt > h4 {
+	padding: 3%;
+}
+
+.boxmainback {
+	position: absolute;
+	width: 60vw;
+	height: 50vh;
+	top: 25vh;
+	left: 20vw;
+	background-color: #1d5a67;
+	opacity: 0.5;
+}
+
+.about,
+.types,
+.projects,
+.gallery {
+	padding: 3%;
+	color: #469280;
+}
+
+.about > p,
+.types > p,
+.projects > p,
+.gallery > p {
+	text-align: justify;
+}
+
+.about,
+.projects {
+	background-color: #13404d;
+}
+
+.types,
+.gallery {
+	background-color: #10313e;
+}
+
+.about > h2,
+.projects > h2 {
+	padding: 0;
+}
+
+.about > p,
+.projects > p {
+	padding: 0;
+}
+
+.typesbox {
+	border: 1px solid #469280;
+	padding: 3%;
+}
+
+.typesbox > img {
+	width: 20vw;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.typestxt {
+	width: 65vw;
+	display: inline-block;
+}
+
+.types > h2,
+.gallery > h2 {
+	padding-left: 0;
+}
+
+.gallerybox {
+	border: 1px solid #469280;
+}
+
+.gallerybox > img {
+	width: 100%;
+}
+
+.gallerybox > p {
+	padding-bottom: 3%;
+}
+
+footer {
+	background-color: #469280;
+	height: 10vh;
+	color: #1d5a67;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer > p {
+	text-align: center;
+}
+
+/**********   mobile   **********/
+@media only screen and (max-width: 568px) {
+}
+
+/**********   tablet   **********/
+@media only screen and (min-width: 569px) and (max-width: 968px) {
+/*	.gallery {
+		display: inline-block;
+		width: 40vw;
+		padding: 3%;
+		color: #469280;
+	}
+
+	.gallerybox2 {
+		float: left;
+		display: inline-block;
+	}*/
+
+	/*.gallery > p {
+		text-align: justify;
+	}
+	.gallerybox > img {
+		width: 100%;
+	}*/
+
+}
+
+/**********   desktop   **********/
+@media only screen and (min-width: 969px) {
+
+/*   wrapper   */
+/*
 .wrapper {
 	width: 85%;
 	min-width: 85%;
@@ -111,14 +306,13 @@ body {
 	background-attachment: scroll;
 	background-size: cover;
 	background-repeat: no-repeat;
-}
+}*/
 
 /*   sidebar   */
 
-nav {
+/*nav {
 	position: fixed;
 	width: 15%;
-	/*min-width: 15%;*/
 	top: 0;
 	left: 0;
 	height: 100vh;
@@ -150,10 +344,10 @@ nav > a {
 .logo > a > img {
 	height: 100%;
 	width: 100%;
-}
+}*/
 
 /*  sidebar button  */
-#toggleIcon,
+/*#toggleIcon,
 #toggleIcon1 {
 	background-color: #838996;
 	position: fixed;
@@ -172,3 +366,5 @@ nav > a {
 #toggleIcon1 {
 	left: 0;
 }
+
+}*/
